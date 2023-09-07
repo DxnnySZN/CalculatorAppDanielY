@@ -1,3 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CalculatorAppDanielY</string>
+	<!-- frame_1 strings -->
+
+	<string name="app_name">Page 1</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="___string">.</string>
+	<string name="_0_string">0</string>
+	<string name="_1_string">1</string>
+	<string name="_2_string">2</string>
+	<string name="_3_string">3</string>
+	<string name="_6_string">6</string>
+	<string name="_5_string">5</string>
+	<string name="_4_string">4</string>
+	<string name="_7_string">7</string>
+	<string name="_8_string">8</string>
+	<string name="_9_string">9</string>
 </resources>
