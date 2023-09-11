@@ -181,7 +181,7 @@
 				android:layout_marginTop="690dp"
 				android:fontFamily="Inter"
 				android:gravity="center"
-				android:text="@string/___string"
+				android:text="@string/_decimal_button"
 				android:textColor="@color/_bg__frame_1_color"
 				android:textSize="50sp" />
 
@@ -196,7 +196,7 @@
 				android:layout_marginTop="690dp"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
-				android:text="@string/_0_string"
+				android:text="@string/_0_button"
 				 />
 
 			<TextView
@@ -208,7 +208,7 @@
 				android:layout_marginTop="563dp"
 				android:fontFamily="Inter"
 				android:gravity="center"
-				android:text="@string/_1_string"
+				android:text="@string/_1_button"
 				android:textColor="@color/_bg__frame_1_color"
 				android:textSize="50sp"
 				android:textStyle="bold" />
@@ -222,7 +222,7 @@
 				android:layout_marginTop="563dp"
 				android:fontFamily="Inter"
 				android:gravity="center"
-				android:text="@string/_2_string"
+				android:text="@string/_2_button"
 				android:textColor="@color/_bg__frame_1_color"
 				android:textSize="50sp"
 				android:textStyle="bold" />
@@ -236,7 +236,7 @@
 				android:layout_marginTop="563dp"
 				android:fontFamily="Inter"
 				android:gravity="center"
-				android:text="@string/_3_string"
+				android:text="@string/_3_button"
 				android:textColor="@color/_bg__frame_1_color"
 				android:textSize="50sp"
 				android:textStyle="bold" />
@@ -250,7 +250,7 @@
 				android:layout_marginTop="444dp"
 				android:fontFamily="Inter"
 				android:gravity="center"
-				android:text="@string/_6_string"
+				android:text="@string/_6_button"
 				android:textColor="@color/_bg__frame_1_color"
 				android:textSize="50sp"
 				android:textStyle="bold" />
@@ -264,7 +264,7 @@
 				android:layout_marginTop="444dp"
 				android:fontFamily="Inter"
 				android:gravity="center"
-				android:text="@string/_5_string"
+				android:text="@string/_5_button"
 				android:textColor="@color/_bg__frame_1_color"
 				android:textSize="50sp"
 				android:textStyle="bold" />
@@ -278,7 +278,7 @@
 				android:layout_marginTop="444dp"
 				android:fontFamily="Inter"
 				android:gravity="center"
-				android:text="@string/_4_string"
+				android:text="@string/_4_button"
 				android:textColor="@color/_bg__frame_1_color"
 				android:textSize="50sp"
 				android:textStyle="bold" />
@@ -292,7 +292,7 @@
 				android:layout_marginTop="326dp"
 				android:fontFamily="Inter"
 				android:gravity="center"
-				android:text="@string/_7_string"
+				android:text="@string/_7_button"
 				android:textColor="@color/_bg__frame_1_color"
 				android:textSize="50sp"
 				android:textStyle="bold" />
@@ -306,7 +306,7 @@
 				android:layout_marginTop="325dp"
 				android:fontFamily="Inter"
 				android:gravity="center"
-				android:text="@string/_8_string"
+				android:text="@string/_8_button"
 				android:textColor="@color/_bg__frame_1_color"
 				android:textSize="50sp"
 				android:textStyle="bold" />
@@ -320,7 +320,7 @@
 				android:layout_marginTop="326dp"
 				android:fontFamily="Inter"
 				android:gravity="center"
-				android:text="@string/_9_string"
+				android:text="@string/_9_button"
 				android:textColor="@color/_bg__frame_1_color"
 				android:textSize="50sp"
 				android:textStyle="bold" />
