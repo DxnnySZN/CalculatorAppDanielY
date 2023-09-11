@@ -47,7 +47,7 @@
 			<View   android:id="@+id/circle"
 				android:background="@drawable/circle_shape"
 				 android:layout_marginStart="50dp"
-				android:layout_marginTop="559dp"
+				android:layout_marginTop="580dp"
 				android:layout_width="75dp"
 				android:layout_height="75dp" />
 
@@ -56,55 +56,55 @@
 				android:layout_width="75dp"
 				android:layout_height="75dp"
 				android:layout_marginStart="50dp"
-				android:layout_marginTop="440dp"
+				android:layout_marginTop="460dp"
 				android:background="@drawable/circle_ek1_shape" />
 
 			<View   android:id="@+id/circle_ek2"
 				android:background="@drawable/circle_ek2_shape"
 				 android:layout_marginStart="50dp"
-				android:layout_marginTop="330dp"
+				android:layout_marginTop="340dp"
 				android:layout_width="75dp"
 				android:layout_height="75dp" />
 
 			<View   android:id="@+id/circle_ek3"
 				android:background="@drawable/circle_ek3_shape"
 				 android:layout_marginStart="160dp"
-				android:layout_marginTop="330dp"
+				android:layout_marginTop="340dp"
 				android:layout_width="75dp"
 				android:layout_height="75dp" />
 
 			<View   android:id="@+id/circle_ek4"
 				android:background="@drawable/circle_ek4_shape"
 				 android:layout_marginStart="270dp"
-				android:layout_marginTop="330dp"
+				android:layout_marginTop="340dp"
 				android:layout_width="75dp"
 				android:layout_height="75dp" />
 
 			<View   android:id="@+id/circle_ek5"
 				android:background="@drawable/circle_ek5_shape"
 				 android:layout_marginStart="160dp"
-				android:layout_marginTop="440dp"
+				android:layout_marginTop="460dp"
 				android:layout_width="75dp"
 				android:layout_height="75dp" />
 
 			<View   android:id="@+id/circle_ek6"
 				android:background="@drawable/circle_ek6_shape"
 				 android:layout_marginStart="270dp"
-				android:layout_marginTop="440dp"
+				android:layout_marginTop="460dp"
 				android:layout_width="75dp"
 				android:layout_height="75dp" />
 
 			<View   android:id="@+id/circle_ek7"
 				android:background="@drawable/circle_ek7_shape"
 				 android:layout_marginStart="160dp"
-				android:layout_marginTop="559dp"
+				android:layout_marginTop="580dp"
 				android:layout_width="75dp"
 				android:layout_height="75dp" />
 
 			<View   android:id="@+id/circle_ek8"
 				android:background="@drawable/circle_ek8_shape"
 				 android:layout_marginStart="270dp"
-				android:layout_marginTop="559dp"
+				android:layout_marginTop="580dp"
 				android:layout_width="75dp"
 				android:layout_height="75dp" />
 
@@ -205,7 +205,7 @@
 				android:gravity="center"
 				android:textSize="50sp"
 				android:textColor="@color/_bg__frame_1_color"
-				android:layout_marginLeft="21dp"
+				android:layout_marginLeft="40dp"
 				android:layout_marginTop="563dp"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
@@ -219,7 +219,7 @@
 				android:gravity="center"
 				android:textSize="50sp"
 				android:textColor="@color/_bg__frame_1_color"
-				android:layout_marginLeft="140dp"
+				android:layout_marginLeft="150dp"
 				android:layout_marginTop="563dp"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
@@ -261,7 +261,7 @@
 				android:gravity="center"
 				android:textSize="50sp"
 				android:textColor="@color/_bg__frame_1_color"
-				android:layout_marginLeft="140dp"
+				android:layout_marginLeft="150dp"
 				android:layout_marginTop="444dp"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
@@ -275,7 +275,7 @@
 				android:gravity="center"
 				android:textSize="50sp"
 				android:textColor="@color/_bg__frame_1_color"
-				android:layout_marginLeft="21dp"
+				android:layout_marginLeft="40dp"
 				android:layout_marginTop="444dp"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
@@ -289,7 +289,7 @@
 				android:gravity="center"
 				android:textSize="50sp"
 				android:textColor="@color/_bg__frame_1_color"
-				android:layout_marginLeft="21dp"
+				android:layout_marginLeft="40dp"
 				android:layout_marginTop="326dp"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
@@ -303,7 +303,7 @@
 				android:gravity="center"
 				android:textSize="50sp"
 				android:textColor="@color/_bg__frame_1_color"
-				android:layout_marginLeft="140dp"
+				android:layout_marginLeft="150dp"
 				android:layout_marginTop="325dp"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
