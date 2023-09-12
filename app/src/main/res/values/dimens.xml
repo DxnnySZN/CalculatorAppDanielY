@@ -3,4 +3,7 @@
     <dimen name = "marginLeftColumn">40dp</dimen>
     <dimen name = "marginMiddleColumn">150dp</dimen>
     <dimen name = "marginRightColumn">260dp</dimen>
+    <dimen name = "outputWorkingTextSize">30sp</dimen>
+    <dimen name = "outputResultsTextSize">45sp</dimen>
+    <dimen name = "heightPaddingResultsText">190dp</dimen>
 </resources>

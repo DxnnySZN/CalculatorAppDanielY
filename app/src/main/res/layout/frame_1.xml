@@ -15,6 +15,7 @@
 	 *
 	 */
 	-->
+
 	<ScrollView android:id="@+id/frame_1" 
 		android:layout_width="wrap_content" 
 		android:layout_height="match_parent" >
@@ -44,6 +45,23 @@
 				android:layout_marginTop="0dp"
 				android:layout_width="393dp"
 				android:layout_height="245dp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/black"
+				android:text="2 + 3"
+				android:textSize="@dimen/outputWorkingTextSize"
+				android:id="@+id/workingsTextView"  />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/heightPaddingResultsText"
+				android:textColor="@color/black"
+				android:text="5"
+				android:textSize="@dimen/outputResultsTextSize"
+				android:id="@+id/resultTextView"  />
 
 			<View   android:id="@+id/circle"
 				android:background="@drawable/circle_shape"
@@ -151,6 +169,13 @@
 				android:layout_width="68dp"
 				android:layout_height="68dp" />
 
+			<View   android:id="@+id/circle_ek15"
+				android:background="@drawable/circle_ek14_shape"
+				android:layout_marginStart="175dp"
+				android:layout_marginTop="670dp"
+				android:layout_width="55dp"
+				android:layout_height="55dp" />
+
 			<View   android:id="@+id/rectangle_3"
 				android:background="@drawable/rectangle_3_shape"
 				 android:layout_marginStart="11dp"
@@ -174,6 +199,7 @@
 
 			<TextView
 				android:id="@+id/__"
+				android:onClick="decimalOnClick"
 				android:layout_width="80dp"
 				android:layout_height="89dp"
 				android:layout_gravity="center_horizontal|center"
@@ -183,9 +209,12 @@
 				android:gravity="center"
 				android:text="@string/_decimal_button"
 				android:textColor="@color/_bg__frame_1_color"
-				android:textSize="50sp" />
+				android:textSize="50sp"
+				 />
 
-			<TextView android:id="@+id/_0"
+			<TextView
+				android:id="@+id/_0"
+				android:onClick="zeroOnClick"
 				android:fontFamily="Inter"
 				android:textStyle="bold"
 				android:layout_gravity="center_horizontal|center"
@@ -201,6 +230,7 @@
 
 			<TextView
 				android:id="@+id/_1"
+				android:onClick="oneOnClick"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
 				android:layout_gravity="center_horizontal|center"
@@ -215,6 +245,7 @@
 
 			<TextView
 				android:id="@+id/_2"
+				android:onClick="twoOnClick"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
 				android:layout_gravity="center_horizontal|center"
@@ -229,6 +260,7 @@
 
 			<TextView
 				android:id="@+id/_3"
+				android:onClick="threeOnClick"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
 				android:layout_gravity="center_horizontal|center"
@@ -243,6 +275,7 @@
 
 			<TextView
 				android:id="@+id/_6"
+				android:onClick="sixOnClick"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
 				android:layout_gravity="center_horizontal|center"
@@ -257,6 +290,7 @@
 
 			<TextView
 				android:id="@+id/_5"
+				android:onClick="fiveOnClick"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
 				android:layout_gravity="center_horizontal|center"
@@ -271,6 +305,7 @@
 
 			<TextView
 				android:id="@+id/_4"
+				android:onClick="fourOnClick"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
 				android:layout_gravity="center_horizontal|center"
@@ -285,6 +320,7 @@
 
 			<TextView
 				android:id="@+id/_7"
+				android:onClick="sevenOnClick"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
 				android:layout_gravity="center_horizontal|center"
@@ -299,6 +335,7 @@
 
 			<TextView
 				android:id="@+id/_8"
+				android:onClick="eightOnClick"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
 				android:layout_gravity="center_horizontal|center"
@@ -313,6 +350,8 @@
 
 			<TextView
 				android:id="@+id/_9"
+				android:onClick="nineOnClick"
+				android:clickable="true"
 				android:layout_width="94dp"
 				android:layout_height="103dp"
 				android:layout_gravity="center_horizontal|center"
@@ -325,15 +364,33 @@
 				android:textSize="50sp"
 				android:textStyle="bold" />
 
-			<ImageView android:id="@+id/shape"
-				android:src="@drawable/shape"
-				android:contentDescription="shape"
-				 android:layout_marginStart="36dp"
+			<TextView
+				android:id="@+id/_C"
+				android:onClick="clearOnClick"
+				android:layout_width="94dp"
+				android:layout_height="103dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginLeft="155dp"
+				android:layout_marginTop="645dp"
+				android:fontFamily="Inter"
+				android:gravity="center"
+				android:text="@string/_C_button"
+				android:textColor="@color/_bg__frame_1_color"
+				android:textSize="40sp"
+				android:textStyle="bold" />
+
+			<ImageView
+				android:id="@+id/shape"
+				android:onClick="addOnClick"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="36dp"
 				android:layout_marginTop="264dp"
-				android:layout_width="29.17dp"
-				android:layout_height="29.17dp" />
+				android:contentDescription="shape"
+				android:src="@drawable/shape" />
 
 			<ImageView android:id="@+id/shape_ek1"
+				android:onClick="subtractOnClick"
 				android:src="@drawable/shape_ek1"
 				android:contentDescription="shape_ek1"
 				 android:layout_marginStart="133dp"
@@ -343,6 +400,7 @@
 
 			<ImageView
 				android:id="@+id/shape_ek"
+				android:onClick="divideOnClick"
 				android:layout_width="29.17dp"
 				android:layout_height="4.17dp"
 				android:layout_marginStart="333dp"
@@ -351,6 +409,7 @@
 				android:src="@drawable/shape_ek1" />
 
 			<ImageView android:id="@+id/shape_ek2"
+				android:onClick="multiplyOnClick"
 				android:src="@drawable/shape_ek2"
 				android:contentDescription="shape_ek2"
 				 android:layout_marginStart="236dp"
@@ -359,6 +418,7 @@
 				android:layout_height="22.5dp" />
 
 			<ImageView android:id="@+id/shape_ek3"
+				android:onClick="equalsOnClick"
 				android:src="@drawable/shape_ek3"
 				android:contentDescription="shape_ek3"
 				 android:layout_marginStart="327.5dp"
