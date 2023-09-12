@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if(result != null){
+            // if result is not null, set the result textview to the results of the double
+            // cast that double into a string
             resultsTV.setText(String.valueOf(result.doubleValue()));
         }
     }
