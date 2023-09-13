@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/md_theme_light_errorContainer"
             android:text="Workings"
-            android:textSize="@dimen/outputWorkingTextSize"
+            android:textSize="@dimen/outputWorkingTextSize"/>
     </LinearLayout>
 
     <!--layout for the buttons-->

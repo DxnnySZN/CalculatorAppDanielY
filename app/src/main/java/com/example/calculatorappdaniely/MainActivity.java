@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); // use this code for activity_main.xml instead of frame_1.xml
-        findID();
+        //findID();
     }
 
-    private void findID(){
-        workingsTV = (TextView)findViewById(R.id.workingsTextView);
-        resultsTV = (TextView)findViewById(R.id.resultTextView);
-    }
+    //private void findID(){
+        //workingsTV = (TextView)findViewById(R.id.workingsTextView);
+        //resultsTV = (TextView)findViewById(R.id.resultTextView);
+    //}
     private void setWorkings(String givenValue){
         // method is going to get called for each of the buttons(textviews)
         // whatever button i click on, it will display my input
