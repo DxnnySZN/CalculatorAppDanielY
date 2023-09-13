@@ -21,8 +21,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/md_theme_light_errorContainer"
-            android:text="Workings"
-            android:textSize="@dimen/outputWorkingTextSize"/>
+            android:text="1+1"
+            android:textSize="@dimen/outputWorkingTextSize"
+            android:id="@+id/workingsTextView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_theme_light_errorContainer"
+            android:text="2"
+            android:textSize="@dimen/outputResultsTextSize"
+            android:id="@+id/resultTextView"/>
     </LinearLayout>
 
     <!--layout for the buttons-->
@@ -42,14 +51,16 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/CustomColor2"
                 android:text="C"
-                android:textSize="@dimen/buttonsTextSize"/>
+                android:textColor="@color/CustomColor1"
+                android:textSize="@dimen/buttonsTextSize" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:text="+"
                 android:textColor="@color/CustomColor1"
                 android:textSize="@dimen/buttonsTextSize" />
@@ -57,6 +68,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="-"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -64,6 +76,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="x"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -71,6 +84,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="/"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -87,6 +101,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="7"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -94,6 +109,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="8"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -101,6 +117,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="9"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -117,6 +134,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="4"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -124,6 +142,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="5"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -131,6 +150,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="6"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -147,6 +167,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="1"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -154,6 +175,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="2"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -161,6 +183,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="3"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -177,6 +200,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="0"
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -184,6 +208,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="."
                 android:textSize="@dimen/buttonsTextSize"/>
@@ -191,12 +216,13 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
+                android:background="@color/md_theme_dark_error"
                 android:textColor="@color/CustomColor1"
                 android:text="="
                 android:textSize="@dimen/buttonsTextSize"/>
 
         </LinearLayout>
-        
+
     </LinearLayout>
-    
+
 </LinearLayout>

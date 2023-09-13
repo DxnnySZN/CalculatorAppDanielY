@@ -1,5 +1,4 @@
 package com.example.calculatorappdaniely;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -20,13 +19,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); // use this code for activity_main.xml instead of frame_1.xml
-        //findID();
+        findID();
     }
 
-    //private void findID(){
-        //workingsTV = (TextView)findViewById(R.id.workingsTextView);
-        //resultsTV = (TextView)findViewById(R.id.resultTextView);
-    //}
+    private void findID(){
+        workingsTV = (TextView)findViewById(R.id.workingsTextView);
+        resultsTV = (TextView)findViewById(R.id.resultTextView);
+    }
     private void setWorkings(String givenValue){
         // method is going to get called for each of the buttons(textviews)
         // whatever button i click on, it will display my input
@@ -50,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if(result != null){
-            // if result is not null, set the result textview to the results of the double
-            // cast that double into a string
             resultsTV.setText(String.valueOf(result.doubleValue()));
         }
     }
