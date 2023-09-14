@@ -60,6 +60,7 @@
     <color name="md_theme_dark_surfaceTint">#CFBCFF</color>
     <color name="md_theme_dark_outlineVariant">#49454E</color>
     <color name="md_theme_dark_scrim">#000000</color>
-    <color name="CustomColor1">#BC9E82</color>
-    <color name="CustomColor2">#0D2EA3</color>
+    <color name="buttonTextColor">#613B17</color>
+    <color name="buttonColor">#AC7D50</color>
+    <color name="bgOutputColor">#EAC998</color>
 </resources>

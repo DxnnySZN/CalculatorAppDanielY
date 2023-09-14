@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">CalculatorAppDanielY</string>
+    <string name="app_name">Best Calculator App</string>
+    <string name="startTextAbove">Best Calculator</string>
+    <string name="startTextBelow">App</string>
 </resources>

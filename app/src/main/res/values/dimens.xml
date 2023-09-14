@@ -6,5 +6,5 @@
     <dimen name = "marginLeftColumn">40dp</dimen>
     <dimen name = "marginMiddleColumn">150dp</dimen>
     <dimen name = "marginRightColumn">260dp</dimen>
-    <dimen name = "heightPaddingResultsText">190dp</dimen>
+    <dimen name = "paddingRight">30dp</dimen>
 </resources>

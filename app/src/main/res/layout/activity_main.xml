@@ -12,25 +12,38 @@
     <!--layout for the output
     layout_weight allows the layout to work for many devices with different dimensions-->
     <LinearLayout
+        android:background="@color/bgOutputColor"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
         android:layout_weight="3">
 
+        <!--setting textAlignment to textEnd is crucial since when the user inputs the desired values,
+        it will start off to the right and get pushed out towards the left-->
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/md_theme_light_errorContainer"
-            android:text="1+1"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/startTextAbove"
+            android:textColor="@color/buttonTextColor"
             android:textSize="@dimen/outputWorkingTextSize"
+            android:layout_gravity="end"
+            android:paddingRight="@dimen/paddingRight"
+            android:textAlignment="textEnd"
             android:id="@+id/workingsTextView"/>
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/md_theme_light_errorContainer"
-            android:text="2"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/startTextBelow"
+            android:textColor="@color/buttonTextColor"
             android:textSize="@dimen/outputResultsTextSize"
+            android:layout_gravity="end"
+            android:paddingRight="@dimen/paddingRight"
+            android:textAlignment="textEnd"
             android:id="@+id/resultTextView"/>
     </LinearLayout>
 
@@ -47,46 +60,52 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
+            <!--must use onClick so when the buttons are clicked by a user, the code can register the click-->
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="@color/CustomColor2"
                 android:text="C"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
+                android:onClick="clearOnClick"
                 android:textSize="@dimen/buttonsTextSize" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
                 android:text="+"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
+                android:onClick="addOnClick"
                 android:textSize="@dimen/buttonsTextSize" />
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="-"
+                android:onClick="subtractOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="x"
+                android:onClick="multiplyOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="/"
+                android:onClick="divideOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
 
         </LinearLayout>
@@ -101,25 +120,28 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="7"
+                android:onClick="sevenOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="8"
+                android:onClick="eightOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="9"
+                android:onClick="nineOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
 
         </LinearLayout>
@@ -134,25 +156,28 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="4"
+                android:onClick="fourOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="5"
+                android:onClick="fiveOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="6"
+                android:onClick="sixOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
 
         </LinearLayout>
@@ -167,25 +192,28 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="1"
+                android:onClick="oneOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="2"
+                android:onClick="twoOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="3"
+                android:onClick="threeOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
 
         </LinearLayout>
@@ -200,25 +228,28 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="0"
+                android:onClick="zeroOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="."
+                android:onClick="decimalOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:background="@color/md_theme_dark_error"
-                android:textColor="@color/CustomColor1"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/buttonTextColor"
                 android:text="="
+                android:onClick="equalsOnClick"
                 android:textSize="@dimen/buttonsTextSize"/>
 
         </LinearLayout>

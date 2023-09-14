@@ -1,3 +1,4 @@
+// https://youtu.be/kqmSUwRZ6kg?si=GS-jYNKDbDpPPpbV this tutorial helped me out with the code provided below
 package com.example.calculatorappdaniely;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,25 +10,22 @@ import android.widget.Toast;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
-
 public class MainActivity extends AppCompatActivity {
     TextView workingsTV;
     TextView resultsTV;
     String workings = "";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); // use this code for activity_main.xml instead of frame_1.xml
         findID();
     }
-
     private void findID(){
         workingsTV = (TextView)findViewById(R.id.workingsTextView);
         resultsTV = (TextView)findViewById(R.id.resultTextView);
     }
     private void setWorkings(String givenValue){
-        // method is going to get called for each of the buttons(textviews)
+        // method is going to get called for each of the buttons
         // whatever button i click on, it will display my input
         workings += givenValue;
         workingsTV.setText(workings);
@@ -49,8 +47,16 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if(result != null){
+            // if result is not null, set the result textview to the results of the double
+            // cast that double into a string
             resultsTV.setText(String.valueOf(result.doubleValue()));
         }
+    }
+    public void decimalOnClick(View view){
+        setWorkings(".");
+    }
+    public void zeroOnClick(View view){
+        setWorkings("0");
     }
     public void oneOnClick(View view){
         setWorkings("1");
